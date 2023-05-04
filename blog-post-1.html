@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Başlık</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">
+          <img class="sekil"  src="logo.png" alt="Logo" >
+        </div>
+        <ul>
+          <li><a href="https://www.aztu.edu.az/az" target="_blank">Ana Səhifə</a></li>
+          <li><a href="#">Xəbərlər</a></li>
+          <li><a href="index.html">Tools</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+
+
+
+
+    <header>
+      <h1>MacChanger    </h1>
+    </header>
+    <main>
+      <article>
+        <h2>"MacChanger" Toolu və İstifadə Qaydası</h2>
+        <p> MacChanger, Kali Linux daxilində mövcud olan bir "network security" tooludur və şəbəkədə işləyən qurğuların MAC adresini dəyişmək üçün istifadə edilir. MAC adresi, hər bir ağ cihazını identifikasiya etmək üçün istifadə olunan məhsulunun unikal identifikatorudur. MacChanger vasitəsilə bu adres dəyişdirilərək, şəbəkədi cihazların identifikasiya prosesi qarışdırıla bilər. MacChanger quraşdırılıb istifadə edilməsi çox asandır.</p>
+       <h1> "MacChanger" toolu Kali Linuxa necə yüklənir?</h1>
+        <p>Macchanger" standart olaraq Kali Linux-da quraşdırılmışdır. Bununla belə, o quraşdırılmayıbsa, siz bu addımları yerinə yetirərək quraşdıra bilərsiniz:</p>
+        <p> 1. <strong> sudo apt-get update</strong> | Bu əmr sistem paket yükləyicilərini yeniləyir. |</p>
+        <p> 2. Sonra, aşağıdakı əmri daxil edərək macchanger alətini quraşdırın:</p>
+        <p> <strong>sudo apt-get install macchanger</strong></p>
+        <p> 3. Macchanger alətinin quraşdırılıb-qurulmadığını yoxlamaq üçün aşağıdakı əmri daxil edin:</p>
+        <p> <strong>macchanger --version </strong> | Bu əmr macchanger alətinin versiya nömrəsini göstərəcək. Versiya nömrəsi göstərilirsə, alət uğurla quraşdırılmışdır. |</p> 
+        <h1>İstifadə Qaydası</h1>
+      <p>'macchanger --help' əmrini daxil edərək, MacChanger toolunun kömək bölümünə daxil olmaq mümkündür. Bu əmr nəticəsində istifadə edilə bilən bütün seçimlər və komandalar haqqında məlumat verilir.</p>
+        <p> <img class="salam" src="2.png" alt="help"></p> 
+        <p>
+        <ul>
+<li> <strong>-h, --help: </strong> Bu seçim, MacChanger toolunun kömək bölümünü açar və istifadə edilə bilən bütün əmrləri və funksiyaları göstərir.</li>
+<li><strong>-V, --version: </strong> Bu seçim, MacChanger toolunun versiyasını ekranda göstərir.</li>
+<li><strong> -s, --show </strong> : Bu seçim, MacChanger vasitəsilə təyin edilən şəbəkə qurğusunun MAC adresini ekranda göstərir.</li>
+<li><strong>-e, --ending</strong>: Bu seçim, MacChanger toolunun MAC adresində sadece istifadəçi tərəfindən təyin edilmiş son 3 baytı dəyişdirməsinə imkan verir.</li>
+<li><strong>-a, --another</strong> : Bu seçim, MacChanger vasitəsilə təyin edilən şəbəkə qurğusuna, eyni növə aid olan təsadüfi bir vendor MAC adresi verir.</li>
+<li><strong>-A</strong> : Bu seçim, MacChanger vasitəsilə təyin edilən şəbəkə qurğusuna, təsadüfi bir vendor MAC adresi verir.</li>
+<li><strong>-p, --permanent</strong>  Bu seçim, MacChanger toolunun MAC adresini, original və permanent olaraq təyin edilmiş MAC adresinə qaytarır.</li>
+<li><strong>-r, --random</strong> Bu seçim, MacChanger tooluna tamamilə təsadüfi bir MAC adresi təyin etməyə imkan verir.</li>
+<li><strong>-l, --list[=keyword]</strong>: Bu seçim, bilinən vendorların siyahısını ekranda göstərir. -l seçimi yalnızca bir anahtar söz verilərsə, sadəcə həmin anahtar sözə uyğun olan vendorları göstərir.</li>
+<li><strong>-b, --bia</strong> : Bu seçim, MacChanger tooluna "Burned-In Address" (BIA) kimi görünməsini təmin edir.</li>
+<li><strong>-m, --mac=XX:XX:XX:XX:XX:XX</strong> : Bu seçim, MacChanger vasitəsilə təyin edilən şəbəkə qurğusunun MAC adresini istifadəçinin təyin etdiyi əvəzlə dəyişməsinə imkan verir.</li>
+<li>Son olaraq, device seçimi, MacChanger toolunun istifadə ediləcək şəbəkə qurğusunun adını təyin edir.</li>
+
+</ul>
+</p>
+<p> Aşağıdaki slaydlarda yuxarıdaki parametrlərə uyğun örnəklər görə bilərsiniz:</p>
+
+<ul id="body">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="1.png">
+        </div>
+        <label for="img-6" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-2" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="2.png">
+        </div>
+        <label for="img-1" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-3" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="3.png">
+        </div>
+        <label for="img-2" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-4" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="4.png">
+        </div>
+        <label for="img-3" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-5" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="5.png">
+        </div>
+        <label for="img-4" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-6" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="6.png">
+        </div>
+        <label for="img-5" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-7" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    <input type="radio" name="radio-btn" id="img-7" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="7.png">
+        </div>
+        <label for="img-6" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-8" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+    <input type="radio" name="radio-btn" id="img-8" />
+    <li id="img-container">
+        <div id="img-inner">
+            <img src="8.png">
+        </div>
+        <label for="img-6" class="sb-bignav" title="Previous">&#x2039;</label>
+        <label for="img-1" class="sb-bignav" title="Next">&#x203a;</label>
+    </li>
+</ul>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+</html>
+      </article>
+      
+    </main>
+    
+    <footer>
+    
+      <p style="color: black;"> © Yusif Hüseynli</p>
+      <p style="color: black;"> © CyberDEV</p>
+    </footer>
+  </body>
+</html>
